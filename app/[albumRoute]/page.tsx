@@ -115,7 +115,6 @@ export default function Album() {
                           <ModalBody className="flex flex-row items-center justify-center flex-wrap">
                             {image.videoSrc ? (
                               <Video
-                                autoPlay
                                 accentColor={config.accentColor}
                                 src={image.videoSrc}
                               />

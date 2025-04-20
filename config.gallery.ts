@@ -64,7 +64,8 @@ const gallery: { albums: Album[] } = {
       posts: [
         {
           title: " ",
-          src: "/assets/me/1.png",
+          src: "/assets/clips/a.png", 
+          videoSrc: "/assets/clips/glitchtransition.mp4"
         },
         {
           title: " ",
