@@ -8,7 +8,7 @@ const config: Config = {
   nickname: "Pedro Nogueira",
   lanyard: {
     active: false, /* if you don't wish to expose your Discord activities with lanyard, set to false */
-    discordId: "801073563368947742",
+    discordId: "",
   },
   accentColor: "#283252",
   avatarImgSrc: "/assets/profile.png",
