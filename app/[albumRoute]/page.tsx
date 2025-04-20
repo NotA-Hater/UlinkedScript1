@@ -33,7 +33,7 @@ export default function Album() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col">My Albums</ModalHeader>
+              <ModalHeader className="flex flex-col">Projetos</ModalHeader>
               <ModalBody className="flex flex-row items-center justify-center flex-wrap">
                 {gallery.albums.map((album, i) => (
                   <motion.a
@@ -86,7 +86,7 @@ export default function Album() {
             className="flex flex-col gap-2 items-center justify-center"
           >
             <h1 className="text-2xl">{album.title}</h1>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-8">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-10">
             {album.posts.map((image, i) => {
               const {
                 isOpen: isImageOpen,
@@ -143,7 +143,7 @@ export default function Album() {
                     </ModalContent>
                   </Modal>
                   <Image alt=""
-                    width={240}
+                    width={500}
                     height={240}
                     className="rounded-md " src={image.src} priority />
                   <h1 className="mt-[-1.5rem] rounded-md text-white font-bold bg-gradient-to-t from-black to-transparent w-full text-center">
