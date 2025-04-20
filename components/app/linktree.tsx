@@ -1,5 +1,5 @@
 "use client";
-import { Camera, Github, Instagram, Linkedin, Music, Youtube, YoutubeIcon } from "lucide-react";
+import { Camera, Github, Instagram, Linkedin, MailIcon, Music, Youtube, YoutubeIcon } from "lucide-react";
 import { Button } from "@heroui/button";
 import {
     Modal,
@@ -21,7 +21,7 @@ import gallery from "../../config.gallery";
 import config from "../../config";
 
 import { ThemeSwitch } from "@/components/theme-switch";
-import { DiscordIcon, SpotifyIcon } from "@/components/icons";
+import { DiscordIcon, SpotifyIcon, WhatsAppIcon } from "@/components/icons";
 import { LanyardData } from "@/types/lanyard-data";
 import Footer from "./footer";
 export interface Response {
@@ -360,6 +360,26 @@ export default function Linktree() {
                             onPress={() => window.open(config.ytMusicLink, "_blank")}
                         >
                             <Music />
+                        </Button>
+                    )}
+                     {config.gmailLink && (
+                        <Button
+                            isIconOnly
+                            className="text-foreground hover:text-white bg-transparent shadow-custom hover:bg-[#BD3232]"
+                            size="sm"
+                            onPress={() => window.open(config.gmailLink, "_blank")}
+                        >
+                            <MailIcon />
+                        </Button>
+                    )}
+                     {config.whatsappLink && (
+                        <Button
+                            isIconOnly
+                            className="text-foreground hover:text-white bg-transparent shadow-custom hover:bg-[#1DB954]"
+                            size="sm"
+                            onPress={() => window.open(config.whatsappLink, "_blank")}
+                        >
+                            <WhatsAppIcon />
                         </Button>
                     )}
                     {config.spotifyLink && (

@@ -8,6 +8,8 @@ export interface Config {
   githubLink?: string;
   instagramLink?: string;
   linkedInLink?: string;
+  whatsappLink?: string;
+  gmailLink?: string;
   discordLink?: string;
   ytMusicLink?: string;
   youtubeLink?: string;
