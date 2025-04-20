@@ -69,11 +69,13 @@ const gallery: { albums: Album[] } = {
         },
         {
           title: " ",
-          src: "/assets/me/2.png",
+          src: "/assets/clips/b.png",
+          videoSrc: "/assets/clips/elimine.mp4"
         },
         {
           title: " ",
-          src: "/assets/me/3.png",
+          src: "/assets/clips/c.png",
+          videoSrc: "/assets/clips/crop.mp4"
         },
         {
           title: " ",
